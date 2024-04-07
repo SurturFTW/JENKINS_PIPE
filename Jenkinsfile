@@ -8,7 +8,7 @@ pipeline {
         stage('Stage 1 - INITIALIZATION') {
             steps {
                 input('Do you want to proceed?')
-                echo 'THIS IS THE DEMO OF MAVEN PIPELINE USING JENKINS'
+                echo 'DEMO OF MAVEN PIPELINE USING JENKINS!'
             }
         }
         stage('Stage 2 - COMPILE CODE') {
@@ -18,13 +18,13 @@ pipeline {
         }
         stage('Stage 3 - UNIT TEST') {
             steps {
-                echo "Running Unit Test"
+                echo "Running Unit Tests"
                 bat "mvn test"
             }
         }
         stage('Stage 4 - INTEGRATION TEST') {
             steps {
-                echo "Running Integration Test"
+                echo "Running Integration Tests"
                 bat "mvn verify"
             }
         }

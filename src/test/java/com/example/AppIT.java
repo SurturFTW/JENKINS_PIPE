@@ -13,6 +13,6 @@ public class AppIT {
     public void integrationTestShouldAnswerWithTrue()
     {
         assertTrue( true );
-        System.out.println("Integration test passed!");
+        System.out.println("Integration test passed!!!");
     }
 }
